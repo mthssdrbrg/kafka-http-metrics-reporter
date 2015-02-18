@@ -216,7 +216,10 @@
                             <shadedClassifierName>${shaded.name}</shadedClassifierName>
                             <artifactSet>
                                 <includes>
-                                    <include>*:*</include>
+                                    <include>io.netty:*</include>
+                                    <include>org.eclipse.*:*</include>
+                                    <include>com.yammer.metrics:metrics-servlet</include>
+                                    <include>com.fasterxml.jackson.core:*</include>
                                 </includes>
                             </artifactSet>
                             <minimizeJar>true</minimizeJar>
