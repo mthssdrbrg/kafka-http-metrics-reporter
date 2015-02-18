@@ -21,6 +21,20 @@
         <connection>scm:git:git://github.com/arnobroekhof/kafka-http-metrics-reporter.git</connection>
         <url>https://github.com/arnobroekhof/kafka-http-metrics-reporter</url>
     </scm>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <scala.version>2.9.2</scala.version>
+        <kafka.version>0.8.0</kafka.version>
+        <log4j.version>1.2.15</log4j.version>
+        <slf4j.version>1.6.4</slf4j.version>
+        <snappy-java.version>1.0.4.1</snappy-java.version>
+        <metrics-core.version>2.2.0</metrics-core.version>
+        <zkclient.version>0.3</zkclient.version>
+        <zookeeper.version>3.3.4</zookeeper.version>
+        <jetty.version>8.1.4.v20120524</jetty.version>
+        <junit.version>4.8.2</junit.version>
+        <shaded.name>uber</shaded.name>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -123,23 +137,6 @@
 
 
     </dependencies>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <scala.version>2.9.2</scala.version>
-        <kafka.version>0.8.0</kafka.version>
-        <log4j.version>1.2.15</log4j.version>
-        <slf4j.version>1.6.4</slf4j.version>
-        <snappy-java.version>1.0.4.1</snappy-java.version>
-        <metrics-core.version>2.2.0</metrics-core.version>
-        <zkclient.version>0.3</zkclient.version>
-        <zookeeper.version>3.3.4</zookeeper.version>
-        <jetty.version>8.1.4.v20120524</jetty.version>
-        <junit.version>4.8.2</junit.version>
-        <shaded.name>uber</shaded.name>
-
-    </properties>
-
     <build>
         <plugins>
             <plugin>
