@@ -39,7 +39,7 @@
     <dependencies>
         <dependency>
             <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka_${scala.version}2.10</artifactId>
+            <artifactId>kafka_${scala.version}</artifactId>
             <version>${kafka.version}</version>
         </dependency>
 
