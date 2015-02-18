@@ -242,8 +242,7 @@
                     <archive>
                         <index>true</index>
                         <manifest>
-                            <addDefaultImplementationEntries>true
-                            </addDefaultImplementationEntries>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
                     </archive>
                 </configuration>
