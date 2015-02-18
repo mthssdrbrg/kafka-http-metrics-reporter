@@ -3,12 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>nl.techop.kafka</groupId>
     <artifactId>kafka-http-metrics-reporter</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
@@ -16,7 +14,6 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-
     <scm>
         <connection>scm:git:git://github.com/arnobroekhof/kafka-http-metrics-reporter.git</connection>
         <url>https://github.com/arnobroekhof/kafka-http-metrics-reporter</url>
@@ -35,14 +32,12 @@
         <junit.version>4.8.2</junit.version>
         <shaded.name>uber</shaded.name>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka_${scala.version}</artifactId>
             <version>${kafka.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
@@ -58,7 +53,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
         <dependency>
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
@@ -82,7 +76,6 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
@@ -93,19 +86,16 @@
             <artifactId>jetty-servlet</artifactId>
             <version>${jetty.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.101tec</groupId>
             <artifactId>zkclient</artifactId>
             <version>0.3</version>
         </dependency>
-
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.xerial.snappy</groupId>
             <artifactId>snappy-java</artifactId>
@@ -121,21 +111,17 @@
             <artifactId>metrics-annotation</artifactId>
             <version>${metrics-core.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.yammer.metrics</groupId>
             <artifactId>metrics-servlet</artifactId>
             <version>${metrics-core.version}</version>
         </dependency>
-
         <!-- Testing -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
         </dependency>
-
-
     </dependencies>
     <build>
         <plugins>
@@ -197,9 +183,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <!-- Build an UberJar -->
-            <!-- Uncomment to have a standalone jar  -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -237,7 +220,6 @@
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
@@ -252,8 +234,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <!-- Add infos in the manifest -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -270,5 +250,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
